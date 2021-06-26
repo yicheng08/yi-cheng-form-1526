@@ -1,0 +1,92 @@
+
+/* 
+Font: Arial, Helvetica, Helvetica Neue, sans-serif;
+Font-size: for entire web-page excluding <legend> tag is 1rem. Font-size for <legend> is 2rem.
+Colors: gray: #DDD, light gray: #F5F5F5, purple blue: #6495ED 
+*/
+
+
+/* general */
+
+body {
+    font-family: Arial, Helvetica, Helvetica Neue, sans-serif;
+    font-size: 1rem;
+}
+
+/*  form  */
+
+.contact-form {
+    margin: 10rem auto;
+    max-width: 50rem;
+    background-color: #F5F5F5;
+    border: 1px solid #DDD;
+    border-radius: 4px;
+}
+
+
+form {
+    padding: 4rem 2rem 2rem 2rem;
+    max-width: 50rem;
+}
+
+legend {
+    border: 1px solid #DDD;
+    font-size: 2rem;
+    padding: 1rem 1rem;
+    float:left;
+	margin-top: -6rem;
+    background-color: white;
+  }
+
+
+form input {
+    margin-top: 0.5rem;
+    width: 100%;
+    height: 2rem;
+    border-radius: 4px;
+    border: 1px solid #DDD;
+}
+
+input[type="button"] {
+    background-color:#6495ED;
+    height: 2.4rem;
+    color: white;
+    font-size: 1rem;
+}
+
+/* input[type="submit"]:hover {
+    background-color: white;
+    color: #6495ED;
+} */
+
+form textarea {
+    height: 4rem;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #DDD;
+    margin-top: 0.5rem;
+}
+
+
+/***************************************************
+			media query        25rem
+***************************************************/
+
+
+@media only screen and (min-width: 25rem) {
+
+    .flex {
+    display: flex;
+    justify-content: space-between;
+    }
+
+    .left, .right {
+        width: 48%;
+    }
+
+    input[type="submit"] {
+        width: 10rem;
+    }
+
+
+}
